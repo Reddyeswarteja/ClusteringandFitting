@@ -43,7 +43,7 @@ def plot_categorical_plot(df):
     df['Gender'].value_counts().plot(kind='bar', ax=ax)
 
     ax.set_title("Gender Distribution")
-
+    plt.tight_layout()
     plt.savefig('categorical_plot.png')
     plt.close()
     return
