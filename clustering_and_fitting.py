@@ -11,7 +11,7 @@ likewise, clustering should be done with only 2 variables.
 """
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pdss
+import pandas as pd
 import scipy.stats as ss
 import seaborn as sns
 from sklearn.cluster import KMeans
