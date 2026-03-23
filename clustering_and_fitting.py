@@ -55,7 +55,7 @@ def plot_statistical_plot(df):
     sns.heatmap(df.corr(numeric_only=True), annot=True, cmap='coolwarm', ax=ax)
 
     ax.set_title("Correlation Heatmap")
-
+    plt.tight_layout()
     plt.savefig('statistical_plot.png')
     plt.close()
     return
@@ -70,8 +70,6 @@ def statistical_analysis(df, col: str):
 
 
 def preprocessing(df):
-    # You should preprocess your data in this function and
-    # make use of quick features such as 'describe', 'head/tail' and 'corr'.
 
     print(df.head())
     print(df.describe())
